@@ -11,8 +11,9 @@ const Timeline = () => {
   const carouselRef = useRef();
 
   const scroll = (node, left) => {
+    if (!node) return; 
     return node.scrollTo({ left, behavior: 'smooth' });
-  }
+  };
 
   const handleClick = (e, i) => {
     e.preventDefault();
@@ -27,26 +28,34 @@ const Timeline = () => {
   const handleScroll = () => {
     if (carouselRef.current) {
       const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
-
       setActiveItem(index);
     }
-  }
+  };
+  
 
   // snap back to beginning of scroll when window is resized
   // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
-      scroll(carouselRef.current, 0);
-    }
-
+      if (carouselRef.current) {
+        scroll(carouselRef.current, 0); // Ensure `carouselRef.current` is not null
+      }
+    };
+  
     window.addEventListener('resize', handleResize);
+  
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
+  
 
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        My journey in technology has been driven by a passion for innovation, from developing AI applications and autonomous systems to creating interactive apps and games. My aim is to continuously push boundaries in software engineering and contribute to impactful, user-centered solutions.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

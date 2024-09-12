@@ -17,7 +17,7 @@ const Hero = () => (
       <SectionText>
       Wish to build up a career employing experience and keenness, academic skills, ability to communicate ideas, commitment to accept challenging work in a well-established and organized organization that is rapidly expanding and offers good advancement potential. 
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com'}>Learn More</Button>
+      <Button onClick={() => window.location = 'https://drive.google.com/file/d/1GTb98GpVdZ2MNO5oIik76fPtYi02Rheo/view?usp=sharing'}>Learn More</Button>
     </LeftSection>
   </Section>
 );

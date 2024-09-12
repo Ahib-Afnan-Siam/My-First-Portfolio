@@ -11,7 +11,7 @@ export const projects = [
   {
     title: 'Language Translator',
     description:"Python-based language translator app that converts text between multiple languages using a user-friendly interface.",
-    image: '/images/2.png',
+    image: '/images/language.png',
     tags: ['Python', 'TkInter'],
     source: 'https://google.com',
     visit: 'https://github.com/Ahib-Afnan-Siam/Language-Translator.git',
@@ -20,7 +20,7 @@ export const projects = [
   {
     title: 'Car Price Predition',
     description: "A Python-based car price prediction project using machine learning to estimate vehicle prices based on various features. ",
-      image: '/images/3.jpg',
+      image: '/images/car.png',
       tags: ['Python', 'NumPy', 'Pandas', 'MatPoltLib'],
     source: 'https://google.com',
     visit: 'https://github.com/Ahib-Afnan-Siam/Car-Price-Predition.git',
@@ -29,7 +29,7 @@ export const projects = [
   {
     title: 'Space Invaders',
     description: "A Python-based Space Invaders game created using Pygame. Control your spaceship, shoot down aliens, and avoid enemy fire. Features increasing difficulty, a scoring system, and multiple lives.",
-    image: '/images/4.jpg',
+    image: '/images/space.png',
     tags: ['Python', 'TkInter'],
     source: 'https://google.com',
     visit: 'https://github.com/Ahib-Afnan-Siam/Space-Invaders.git',
@@ -38,7 +38,7 @@ export const projects = [
   {
     title: 'Food Ordering App',
     description: "A Tkinter-based food ordering app featuring interactive menus with images, cart management, delivery or pickup options, and order history tracking. ",
-    image: '/images/4.jpg',
+    image: '/images/food.png',
     tags: ['Python', 'TkInter'],
     source: 'https://google.com',
     visit: 'https://github.com/Ahib-Afnan-Siam/Food-Ordering-App.git',
@@ -47,7 +47,7 @@ export const projects = [
   {
     title: 'My Calculator',
     description: "A Python-based calculator that supports basic arithmetic, trigonometric functions, square roots, and squares, designed with an intuitive interface.",
-    image: '/images/4.jpg',
+    image: '/images/My.png',
     tags: ['Python', 'TkInter'],
     source: 'https://google.com',
     visit: 'https://github.com/Ahib-Afnan-Siam/My-Calculator.git',
@@ -56,9 +56,10 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
+  { year: 2017, text: 'Passed SSC Examination on Science from Bindubashini Govt. Boys High School', },
+  { year: 2019, text: 'Passed HSC Examination on Science from Notre Dame College', },
+  { year: 2020, text: 'Started studying Computer Science And Engineering at BRAC University', },
+  { year: 2020, text: 'Started working as Software Quality Assurance(SQA) at Turing', },
+  { year: 2023, text: 'Became the Team Lead of AI & Autonomous at BRACU OgniBir', },
+  { year: 2024, text: 'Started Internship as Full Stack Developer at Meta CraftLab', },
 ];

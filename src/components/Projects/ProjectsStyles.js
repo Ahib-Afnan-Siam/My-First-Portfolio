@@ -20,17 +20,21 @@ row-gap: 3rem;
   padding: 2rem;
   padding-bottom: 0;
 }
+`;
 
-`
 export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  overflow: hidden; // Ensures content doesn't overflow the rounded corners
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
 `;
+
+
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
